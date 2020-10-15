@@ -1,0 +1,13 @@
+[package]
+name = "snmp-traffic-control"
+version = "0.1.0"
+authors = ["Nik Johnson <nik@nikjohnson.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3"
+rtnetlink = "0.5.0"
+netlink-packet-route = "0.5.0"
+tokio = { version = "0.2.22", features = ["io-std", "io-util", "macros", "rt-core"] }

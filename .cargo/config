@@ -1,0 +1,5 @@
+[target.mips64-unknown-linux-muslabi64]
+linker = "rust-lld"
+
+[target.mips64-unknown-linux-gnuabi64]
+linker = "rust-lld"
