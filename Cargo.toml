@@ -1,8 +1,17 @@
+cargo-features = ["strip"]
+
 [package]
 name = "snmp-traffic-control"
 version = "0.1.0"
 authors = ["Nik Johnson <nik@nikjohnson.net>"]
 edition = "2018"
+
+[profile.release]
+opt-level = 'z'
+strip = 'symbols'
+lto = true
+codegen-units = 1
+panic = 'abort'
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
